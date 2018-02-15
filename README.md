@@ -5,6 +5,9 @@ Lexical and syntax gramma analysis app in example of wholesaler of sports clothi
 The football club orders from the wholesaler sports clothes for the club changing room. Order refers to a T-shirt, match shirts and shorts in different sizes and also in two different colors: blue and red. The program is designed to collect a full order as a compilation of various variants. This application is an example of show the scheme of building the program in PLY. App uses polish language. For see full details go to [documents](documents).
 
 ### Screenshots
+Screenshots examples of orders and clothes states.
+
+<img src="screenshots/result1.png" width="300"> <img src="screenshots/result2.png" width="300"> <img src="screenshots/result3.png" width="300">
 
 ## PLY
 PLY is a Python language library that allows to build parsers and compilers. PLY is based on the well-known Lex and Yacc libraries for language C - however, it is implemented from scratch in Python. PLY Library divided into two components LEX and YACC. 
@@ -56,10 +59,10 @@ Grammar G = <N, V, P, S>
 {  
 	cmd: (number, art),  
 	art: (size, color, shape, kind),  
-	number: ("trzy", "troje", "jedna", "siedem"),
-	size: ("malych", "duze", "wielka"),
-	color: ("niebieska"),
-	shape: ("owalna"),
+	number: ("trzy", "troje", "jedna", "siedem"),  
+	size: ("malych", "duze", "wielka"),  
+	color: ("niebieska"),  
+	shape: ("owalna"),  
 	kind: ("chlopcow", "druzyny", "pilek", "pilka")  
 }
 
@@ -76,7 +79,7 @@ OUT: jedna: NUMBER, wielka: SIZE, niebieska: COLOR, owalna: SHAPE, pilka: KIND
 ## Syntax analysis
 The syntax analysis checks whether the input meets the grammar rules. In case of correctness, may return the series of actions taken. The program that this analysis is called a parser (eg: YACC).
 
-### Stbtax analysis examples
+### Syntax analysis examples
 IN: jedna:SIZE owalna:SHAPE niebieska:COLOR wielka:SIZE pilka:KIND  
 OUT: Failure  
   

@@ -7,7 +7,7 @@ The football club orders from the wholesaler sports clothes for the club changin
 ### Screenshots
 Screenshots examples of orders and clothes states.
 
-<img src="screenshots/result1.png" width="300"> <img src="screenshots/result2.png" width="300"> <img src="screenshots/result3.png" width="300">
+<img src="screenshots/result1.png" width="250"> <img src="screenshots/result2.png" width="250"> <img src="screenshots/result3.png" width="250">
 
 ## PLY
 PLY is a Python language library that allows to build parsers and compilers. PLY is based on the well-known Lex and Yacc libraries for language C - however, it is implemented from scratch in Python. PLY Library divided into two components LEX and YACC. 
